@@ -37,8 +37,8 @@ const makeTransaction = (transaction) => {
     return promise;
 };
 
-const logSuccess = (arr) => {
-  console.log(`Transaction ${arr[0]} processed in ${arr[1]}ms`);
+const logSuccess = ([id, ms]) => {
+  console.log(`Transaction ${id} processed in ${ms}ms`);
 };
 
 const logError = id => {
